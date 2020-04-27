@@ -8,44 +8,31 @@
 
 import Foundation
 
-struct BanryTree<T: Comparable> {
-    var root: Node?
-    var left: Node?
-    var right: Node?
-    var list: [Node] = []
-    public struct Node: Comparable {
-        static func < (lhs: BanryTree<T>.Node, rhs: BanryTree<T>.Node) -> Bool {
-            return lhs.data == rhs.data
-        }
-        var data: T
-    }
+struct BanrySearchTree<T: Comparable>: TreeProtocol {
+    
+    typealias E = T
+    var root: Node<T>?
+    private (set) var size: Int = 0
+    
 }
 
-extension BanryTree{
-    var isEmpty: Bool{
-        return list.isEmpty
-    }
-    
-    var size: Int{
-        return list.count
-    }
-    
-    mutating func clear() {
-        list.removeAll()
-    }
-    
-    mutating func add(_ node: Node) {
-        list.append(node)
-    }
-    
-    mutating func remove(_ node: Node) -> Node?{
-        guard let index = list.firstIndex(of: node) else { return nil }
-        return list.remove(at: index)
-    }
-    
-    func content(_ node: Node) -> Bool{
-        return list.contains(where: {$0.data == node.data})
-    }
+extension BanrySearchTree{
+   func clear() {
+       
+   }
+   
+   func remove(_ element: T) -> T {
+       return element
+   }
+   
+   func add(_ element: T) -> T {
+       return element
+   }
+   
+   func isEmpty() -> Bool {
+       return size == 0
+   }
+
 }
 
 

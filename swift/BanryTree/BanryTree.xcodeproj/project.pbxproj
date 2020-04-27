@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A5CEB2F12449B1B400A96F83 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEB2F02449B1B400A96F83 /* main.swift */; };
 		A5CEB2F82449B1D100A96F83 /* BanryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEB2F72449B1D100A96F83 /* BanryTree.swift */; };
+		A5F3C9B9245682A1009A0150 /* TreeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3C9B8245682A1009A0150 /* TreeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		A5CEB2ED2449B1B400A96F83 /* BanryTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BanryTree; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CEB2F02449B1B400A96F83 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A5CEB2F72449B1D100A96F83 /* BanryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanryTree.swift; sourceTree = "<group>"; };
+		A5F3C9B8245682A1009A0150 /* TreeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				A5CEB2F02449B1B400A96F83 /* main.swift */,
 				A5CEB2F72449B1D100A96F83 /* BanryTree.swift */,
+				A5F3C9B8245682A1009A0150 /* TreeProtocol.swift */,
 			);
 			path = BanryTree;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			files = (
 				A5CEB2F82449B1D100A96F83 /* BanryTree.swift in Sources */,
 				A5CEB2F12449B1B400A96F83 /* main.swift in Sources */,
+				A5F3C9B9245682A1009A0150 /* TreeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
