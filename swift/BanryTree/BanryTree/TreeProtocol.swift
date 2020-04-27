@@ -10,6 +10,7 @@ import Foundation
 
 protocol TreeProtocol {
     associatedtype E
+    var root: Node<E>? {get}
     ///元素的数量
     var size: Int {get}
     ///是否为空
@@ -20,6 +21,21 @@ protocol TreeProtocol {
     func add(_ element: E) -> E
     ///元素的数量
     func remove(_ element: E) -> E
+}
+
+extension TreeProtocol{
+    func description() {
+        inorderTraversal(root)
+    }
+    
+    func inorderTraversal(_  node: Node<E>?) {
+        guard let root = node else {
+            return
+        }
+        inorderTraversal(node?.left)
+        print(root.element)
+        inorderTraversal(node?.right)
+    }
 }
 
 protocol NodeProtocol {
@@ -63,4 +79,15 @@ class Node<T>: NodeProtocol {
         }
         return true
     }
+    
+//    func isLeftChild(_ node: Node<T>) -> Bool {
+//        guard let left = left else { return false }
+//        return node.element == left.element
+//    }
+//
+//    func isRightChild(_ node: Node<T>) -> Bool {
+//        guard let right = right else { return false }
+//        return comp
+//    }
+
 }
